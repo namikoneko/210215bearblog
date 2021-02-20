@@ -40,6 +40,17 @@
   Simply place a custom_body.html into
   your local /layouts/partials-directory -->
   {{- partial "custom_body.html" . -}}
+  <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 </body>
 
 </html>
