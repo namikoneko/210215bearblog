@@ -16,3 +16,4 @@ fields:
   label: tags
 pages:
 - content/blog/aaa.md
+- content/blog/test.md
