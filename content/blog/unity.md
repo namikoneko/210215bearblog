@@ -1,7 +1,6 @@
 +++
 date = 2021-05-15T15:00:00Z
 description = ""
-draft = true
 tags = ["unity"]
 title = "unityの勉強"
 
